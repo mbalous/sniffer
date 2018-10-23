@@ -13,9 +13,6 @@ namespace Sniffer
         [STAThread]
         static void Main()
         {
-            // Do not send anonymous statistics about the usage of Pcap.Net
-            PcapDotNet.Analysis.PcapDotNetAnalysis.OptIn = false;
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SnifferMain());

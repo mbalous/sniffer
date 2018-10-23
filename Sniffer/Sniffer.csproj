@@ -77,23 +77,17 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IPAddressControlLib">
-      <HintPath>IPAddressControlLib\IPAddressControlLib.dll</HintPath>
+    <Reference Include="PcapDotNet.Base, Version=1.0.4.25027, Culture=neutral, PublicKeyToken=06a20bc2fabb1931, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pcap.Net.x86.1.0.4.1\lib\net45\PcapDotNet.Base.dll</HintPath>
     </Reference>
-    <Reference Include="PcapDotNet.Analysis">
-      <HintPath>PcapDotNet\PcapDotNet.Analysis.dll</HintPath>
+    <Reference Include="PcapDotNet.Core, Version=1.0.4.25067, Culture=neutral, PublicKeyToken=06a20bc2fabb1931, processorArchitecture=x86">
+      <HintPath>..\packages\Pcap.Net.x86.1.0.4.1\lib\net45\PcapDotNet.Core.dll</HintPath>
     </Reference>
-    <Reference Include="PcapDotNet.Base">
-      <HintPath>PcapDotNet\PcapDotNet.Base.dll</HintPath>
+    <Reference Include="PcapDotNet.Core.Extensions, Version=1.0.4.25069, Culture=neutral, PublicKeyToken=06a20bc2fabb1931, processorArchitecture=x86">
+      <HintPath>..\packages\Pcap.Net.x86.1.0.4.1\lib\net45\PcapDotNet.Core.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="PcapDotNet.Core">
-      <HintPath>PcapDotNet\PcapDotNet.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="PcapDotNet.Core.Extensions">
-      <HintPath>PcapDotNet\PcapDotNet.Core.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="PcapDotNet.Packets">
-      <HintPath>PcapDotNet\PcapDotNet.Packets.dll</HintPath>
+    <Reference Include="PcapDotNet.Packets, Version=1.0.4.25028, Culture=neutral, PublicKeyToken=06a20bc2fabb1931, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pcap.Net.x86.1.0.4.1\lib\net45\PcapDotNet.Packets.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -157,6 +151,7 @@
       <DependentUpon>SnifferMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
