@@ -12,7 +12,7 @@ namespace Sniffer
 		[System.Runtime.InteropServices.DllImport("user32.dll")]
 		public static extern int SendMessage(IntPtr hWnd, Int32 wMsg, bool wParam, Int32 lParam);
 
-		private static const int WM_SETREDRAW = 11; 
+		private const int WM_SETREDRAW = 11; 
 
 		/// <summary>
 		/// Convert a byte array to hex string array
